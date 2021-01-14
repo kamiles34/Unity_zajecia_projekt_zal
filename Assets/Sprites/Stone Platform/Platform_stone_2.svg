@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="600"
+   height="400"
+   viewBox="0 0 158.75 105.83334"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="Platform_stone_2.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="296.19598"
+     inkscape:cy="188.39455"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1677"
+     inkscape:window-height="1030"
+     inkscape:window-x="128"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Warstwa 3" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Warstwa 2">
+    <path
+       style="fill:#4a4a4a;fill-opacity:1;stroke:none;stroke-width:0.592745px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 34.773808,31.589489 h 87.228682 l -0.43183,15.359403 -9.06833,12.868686 -15.11387,7.472148 c 0,0 -16.841193,8.7175 -18.136659,7.05702 C 77.956336,72.686271 54.205939,72.686271 54.205939,72.686271 L 42.546656,58.987343 39.523895,43.627939 36.069281,39.06163 Z"
+       id="path851" />
+    <path
+       style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:0.484686px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 46.369989,31.537213 h 82.166841 l -6.85206,11.83544 -7.86871,9.916176 -13.11452,5.757785 c 0,0 -14.61331,6.717411 -15.737405,5.437901 C 83.840039,63.205009 63.231517,63.205009 63.231517,63.205009 L 53.114586,52.649077 50.491711,40.813639 47.494085,37.294994 Z"
+       id="path853"
+       sodipodi:nodetypes="cccccsccccc" />
+  </g>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#b0b0b0;fill-opacity:1;stroke:none;stroke-width:0.165;stroke-linecap:round;stroke-opacity:1"
+       id="rect848"
+       width="0.13363476"
+       height="1.3363476"
+       x="133.188"
+       y="163.33955"
+       ry="0.06681738" />
+  </g>
+</svg>

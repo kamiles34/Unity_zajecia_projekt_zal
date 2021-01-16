@@ -25,7 +25,7 @@ public class CharacterController2D : MonoBehaviour
 	private bool isDashing = false; //If player is dashing
 	private bool m_IsWall = false; //If there is a wall in front of the player
 	private bool isWallSliding = false; //If player is sliding in a wall
-	private bool oldWallSlidding = false; //If player is sliding in a wall in the previous frame
+	private bool wasWallSlidding = false; //If player is sliding in a wall in the previous frame
 	private float prevVelocityX = 0f;
 	private bool canCheck = false; //For check if player is wallsliding
 
@@ -191,7 +191,7 @@ public class CharacterController2D : MonoBehaviour
 
 			else if (m_IsWall && !m_Grounded)
 			{
-				if (!oldWallSlidding && m_Rigidbody2D.velocity.y < 0 || isDashing)
+				if (!wasWallSlidding && m_Rigidbody2D.velocity.y < 0 || isDashing)
 				{
 					isWallSliding = true;
 					m_WallCheck.localPosition = new Vector3(-m_WallCheck.localPosition.x, m_WallCheck.localPosition.y, 0);
@@ -210,7 +210,7 @@ public class CharacterController2D : MonoBehaviour
 					}
 					else 
 					{
-						oldWallSlidding = true;
+						wasWallSlidding = true;
 						m_Rigidbody2D.velocity = new Vector2(-transform.localScale.x * 2, -5);
 					}
 				}
@@ -226,7 +226,7 @@ public class CharacterController2D : MonoBehaviour
 					canDoubleJump = true;
 					isWallSliding = false;
 					animator.SetBool("IsWallSliding", false);
-					oldWallSlidding = false;
+					wasWallSlidding = false;
 					m_WallCheck.localPosition = new Vector3(Mathf.Abs(m_WallCheck.localPosition.x), m_WallCheck.localPosition.y, 0);
 					canMove = false;
 				}
@@ -234,7 +234,7 @@ public class CharacterController2D : MonoBehaviour
 				{
 					isWallSliding = false;
 					animator.SetBool("IsWallSliding", false);
-					oldWallSlidding = false;
+					wasWallSlidding = false;
 					m_WallCheck.localPosition = new Vector3(Mathf.Abs(m_WallCheck.localPosition.x), m_WallCheck.localPosition.y, 0);
 					canDoubleJump = true;
 					StartCoroutine(DashCooldown());
@@ -244,7 +244,7 @@ public class CharacterController2D : MonoBehaviour
 			{
 				isWallSliding = false;
 				animator.SetBool("IsWallSliding", false);
-				oldWallSlidding = false;
+				wasWallSlidding = false;
 				m_WallCheck.localPosition = new Vector3(Mathf.Abs(m_WallCheck.localPosition.x), m_WallCheck.localPosition.y, 0);
 				canDoubleJump = true;
 			}
@@ -279,7 +279,7 @@ public class CharacterController2D : MonoBehaviour
 			else
 			{
 				StartCoroutine(Stun(0.25f));
-				StartCoroutine(MakeInvincible(0.75f));
+				StartCoroutine(MakeInvincible(1f));
 			}
 		}
 	}
@@ -327,7 +327,7 @@ public class CharacterController2D : MonoBehaviour
 		canDoubleJump = true;
 		isWallSliding = false;
 		animator.SetBool("IsWallSliding", false);
-		oldWallSlidding = false;
+		wasWallSlidding = false;
 		m_WallCheck.localPosition = new Vector3(Mathf.Abs(m_WallCheck.localPosition.x), m_WallCheck.localPosition.y, 0);
 	}
 
